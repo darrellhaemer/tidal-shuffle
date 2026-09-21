@@ -1,0 +1,5 @@
+   tidal_session.json
+   __pycache__/
+   *.pyc
+   .venv/
+   venv/
