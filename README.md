@@ -29,7 +29,7 @@ Download Python from the official site, **https://www.python.org/downloads/**, a
 On Windows, the installer may offer to add Python to your PATH. Say **yes** (`y`, or tick the "Add python.exe to PATH" checkbox). If it asks whether to install Python (CPython) now, say **yes**.
 
 Then **close any open PowerShell or Terminal window and open a new one (press the Windows key, type Powershell, press Enter)**, and check that it worked by entering:
-
+```
 python --version
 ```
 
@@ -39,7 +39,7 @@ You should see a version number. If Windows says `python` isn't recognized, try 
 ### 2. Install the TIDAL library
 
 In Powershell, enter:
-
+```
 python -m pip install tidalapi
 ```
 
@@ -61,7 +61,6 @@ A. Open PowerShell (or Terminal) and navigate to your folder with something like
 B. Run one of the scripts by entering either of the following:
    ```
    python tidal_shuffle.py
-   ```
    python tidal_shuffle_spaced.py
    ```
 
@@ -79,9 +78,9 @@ TIP: Tidal may not display your new playlist in the left column. To refresh it, 
 
 In `tidal_shuffle_spaced.py`, near the top of the file:
 
-```python
+`
 MIN_ARTIST_GAP = 5
-```
+`
 
 This is the minimum number of *other* tracks between two songs by the same main artist. Only the main artist counts (featured artists are ignored). If a playlist is dominated by one artist, the gap can't always be met, and the script spaces them as far apart as it can. It prints how many tracks couldn't meet the gap before it creates the playlist.
 
